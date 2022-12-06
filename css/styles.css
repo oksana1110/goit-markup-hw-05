@@ -384,99 +384,7 @@ padding-bottom: 200px;
     fill: var(--active-color);
 }
 
-/*----------Footer--------*/
-.footer{
-    max-width: 1600px;
-    background-color: #2F303A;
-    padding: 60px 0px;}
 
-.footer-logoo {
-    
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--active-color-two);
-}
-
-
-.footer-logo {color: var(--primary-color);
-              margin-bottom: 28px;}
-
-.footer-logo:hover{color: var(--active-color);}
-.footer-logo:focus{color: var(--active-color);}
-.auth-address {font-style: normal;}
-.address-link {        
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71; 
-    letter-spacing: 0.03em;   
-    color: var(--primary-color);}
-
-.address-item {       
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;    
-     color: rgba(255, 255, 255, 0.6);}
-
-.address-link:hover,
-.address-link:focus{color: var(--active-color);}
-
-.address-item:hover,
-.address-item:focus{color: var(--active-color);}
-
-.auth-addr{
-    margin-bottom: 12px;
-}
-
-
-.footer-soc-title{
-    font-style: bold;
-    font-size: 14px;   
-    line-height: 1.14;     
-    line-height: 100%;
-    align-items: left;
-    vertical-align: top; 
-    letter-spacing: 0.03em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-.footer-icons {
-    display: flex;
-}
-
-.footer-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.footer-soc-icon{
-    margin-right: 70px;
-}
-
-
-.footer-lists {
-    width: 44px;
-    height: 44px;
-    }
-.footer-lists:not(:last-child){
-    margin-right: 10px;
-}
-.footer-link{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-.footer-link:hover{
-   background-color: var(--active-color);
-}
 /*----------Filter.portfolio--------*/
 .filter-button {    
     font-family: inherit;
@@ -558,4 +466,156 @@ padding-bottom: 200px;
 
 .project-link:hover{
     box-shadow:  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/*----------Footer--------*/
+.footer {
+    max-width: 1600px;
+    background-color: #2F303A;
+    padding: 60px 0px;
+}
+
+.footer-logoo {
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--active-color-two);
+}
+
+
+.footer-logo {
+    color: var(--primary-color);
+    margin-bottom: 28px;
+}
+
+.footer-logo:hover {
+    color: var(--active-color);
+}
+
+.footer-logo:focus {
+    color: var(--active-color);
+}
+
+.auth-address {
+    font-style: normal;
+}
+
+.address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+
+.address-item {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--active-color);
+}
+
+.address-item:hover,
+.address-item:focus {
+    color: var(--active-color);
+}
+
+.auth-addr {
+    margin-bottom: 12px;
+}
+
+
+.footer-soc-title {
+    font-style: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    line-height: 100%;
+    align-items: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-soc-icon {
+    margin-right: 70px;
+}
+
+
+.footer-lists {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-lists:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover {
+    background-color: var(--active-color);
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.1);
+    }
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    transform: transform 300ms linear;
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal-close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    border:1px solid  rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
